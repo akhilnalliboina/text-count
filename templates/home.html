@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-<h1> This is Akhil Nalliboina </h1>
+<h1> This is Text counter</h1>
 
-<form action='/count/'>
+<form action="{% url 'count' %}">
 
-    <p>Input the text to count the no of words</p>
+    <p>Input the text to count the number of words</p>
     
-  <textarea rows="4" cols="50" name="comment" form="usrform">
-    paste your text here...</textarea>
+  <textarea name= "message" rows="4" cols="50"></textarea>
+    <br>
+    <br>
     <br>
   <input type="submit" value="count now">
 </form>

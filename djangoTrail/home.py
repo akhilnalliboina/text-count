@@ -7,4 +7,7 @@ def home(request):
 
 
 def count(request):
-    return render(request, "count.html")
+    msg = request.GET['message']
+    word = msg.split()
+    print(msg)
+    return render(request, "count.html", {"mess": msg, "length": len(word)})
